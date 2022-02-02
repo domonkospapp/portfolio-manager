@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "projects": {
+    "api": "apps/api",
+    "api-interfaces": "libs/api-interfaces",
+    "portfolio-manager": "apps/portfolio-manager",
+    "portfolio-manager-e2e": "apps/portfolio-manager-e2e"
+  }
+}
