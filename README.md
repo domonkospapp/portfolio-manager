@@ -1,7 +1,44 @@
+## Portfolio manager
+This app will help you keep up with your portfolio and help you estimate the value of companies
 
+Prototypes are scattered to separated repositories
+## Prototypes
+- API & Cache: [domonkospapp/alphavantage-api-cache](https://github.com/domonkospapp/alphavantage-api-cache)
+- DCF & Build: [domonkospapp/frontend-build-system](https://github.com/domonkospapp/frontend-build-system)
+- Lightweight Preact setup: [domonkospapp/snowpack-react](https://github.com/domonkospapp/snowpack-react)
+- Firebase Authentication & Storage: [domonkospapp/firebase-demo](https://github.com/domonkospapp/firebase-demo)
+- Nx mono repo: [domonkospapp/nx-orders](https://github.com/domonkospapp/nx-orders/)
 
-# PortfolioManager
+## Features
+### Order manager
+- Store invoices
+- Extract order information from invoice
+- Manually create / sell / trim order
+- Provide overall portfolio info
+### Company valuatior
+- Collect stock infos from APIs
+- Create & Store valuations
+- Extendable with further valuation methods
+### Research manager
+- Store PDFs (SEC fillings, Presentations, Market analisises)
+- Earnings Calendar
+- ToDo
+- Research notes
+- ( Driver based DCF research elements )
+## High level view
+![high-level-overview](https://user-images.githubusercontent.com/51707177/151068823-9d17317f-4086-4b6b-9952-3c1edd22a6d7.png)
+## Tech
+### APIs
+- https://www.alphavantage.co
+- https://data.nasdaq.com
+- https://obermind.com
+### Styling
+- https://tailwindcss.com
+- https://mui.com
+## Milestones
+![dev-order](https://user-images.githubusercontent.com/51707177/151069606-624ec29d-e2a5-48a8-8122-62d2ed71355d.png)
 
+## NX auto generated
 This project was generated using [Nx](https://nx.dev).
 
 <p style="text-align: center;"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="450"></p>
