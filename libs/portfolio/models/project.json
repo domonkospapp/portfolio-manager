@@ -1,0 +1,23 @@
+{
+  "root": "libs/portfolio/models",
+  "sourceRoot": "libs/portfolio/models/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/portfolio/models/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/portfolio/models"],
+      "options": {
+        "jestConfig": "libs/portfolio/models/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}
