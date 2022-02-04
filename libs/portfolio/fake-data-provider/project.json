@@ -1,0 +1,23 @@
+{
+  "root": "libs/portfolio/fake-data-provider",
+  "sourceRoot": "libs/portfolio/fake-data-provider/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/portfolio/fake-data-provider/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/portfolio/fake-data-provider"],
+      "options": {
+        "jestConfig": "libs/portfolio/fake-data-provider/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}
