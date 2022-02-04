@@ -1,12 +1,19 @@
 import * as express from 'express';
-import { Message } from '@portfolio-manager/api-interfaces';
+import { getAllTransactions, getTransaction } from './app/transactionRepository';
+import { transactionsPositionsConverter } from '@portfolio-manager/portfolio/utils';
 
 const app = express();
 
-const greeting: Message = { message: 'Welcome to api!' };
+app.get('/api/transactions', (req, res) => {
+  const transactions = getAllTransactions();
+  const positions = transactionsPositionsConverter(transactions);
+  res.send(positions);
+});
 
-app.get('/api', (req, res) => {
-  res.send(greeting);
+app.get('/api/transactions/:id', (req, res) => {
+  const transactionId = req.params.id;
+  const transaction = getTransaction(transactionId)
+  res.send(transaction);
 });
 
 const port = process.env.port || 3333;
