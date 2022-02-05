@@ -1,4 +1,4 @@
-import { Broker } from "@portfolio-manager/api-interfaces";
+import { Broker } from "@portfolio-manager/portfolio/interfaces";
 
 export const broker :Broker = {
   name: "Degiro",

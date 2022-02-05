@@ -1,5 +1,5 @@
-import { Transaction } from "@portfolio-manager/api-interfaces";
-import { broker } from "./fake-brokers";
+import { Transaction } from "@portfolio-manager/portfolio/interfaces";
+import { broker } from "..";
 
 export const transactions :Transaction[] = [
   {
