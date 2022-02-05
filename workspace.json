@@ -2,8 +2,12 @@
   "version": 2,
   "projects": {
     "api": "apps/api",
-    "api-interfaces": "libs/api-interfaces",
+    "portfolio-fake-data-provider": "libs/portfolio/fake-data-provider",
+    "portfolio-interfaces": "libs/portfolio/interfaces",
     "portfolio-manager": "apps/portfolio-manager",
-    "portfolio-manager-e2e": "apps/portfolio-manager-e2e"
+    "portfolio-manager-e2e": "apps/portfolio-manager-e2e",
+    "portfolio-models": "libs/portfolio/models",
+    "portfolio-ui-components": "libs/portfolio/ui-components",
+    "portfolio-utils": "libs/portfolio/utils"
   }
 }

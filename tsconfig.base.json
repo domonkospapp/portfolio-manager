@@ -15,7 +15,21 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@portfolio-manager/api-interfaces": ["libs/api-interfaces/src/index.ts"]
+      "@portfolio-manager/portfolio/fake-data-provider": [
+        "libs/portfolio/fake-data-provider/src/index.ts"
+      ],
+      "@portfolio-manager/portfolio/interfaces": [
+        "libs/portfolio/interfaces/src/index.ts"
+      ],
+      "@portfolio-manager/portfolio/models": [
+        "libs/portfolio/models/src/index.ts"
+      ],
+      "@portfolio-manager/portfolio/ui-components": [
+        "libs/portfolio/ui-components/src/index.ts"
+      ],
+      "@portfolio-manager/portfolio/utils": [
+        "libs/portfolio/utils/src/index.ts"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]
