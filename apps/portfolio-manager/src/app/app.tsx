@@ -1,26 +1,30 @@
-import React, { useEffect, useState } from 'react';
-import { Message } from '@portfolio-manager/api-interfaces';
+import { Position } from '@portfolio-manager/portfolio/models';
+import { PositionList } from '@portfolio-manager/portfolio/ui-components';
+import { useEffect, useState } from 'react';
+
 
 export const App = () => {
-  const [m, setMessage] = useState<Message>({ message: '' });
+  const [positions, setPositions] = useState<Position[]>();
 
   useEffect(() => {
-    fetch('/api')
-      .then((r) => r.json())
-      .then(setMessage);
+    fetch('/api/transactions').then(
+      res => res.json()).then(positions => positions.map(Position.build)).then(setPositions
+    );
   }, []);
+
+  const getCurrentPrice = (ticker: string) => {
+    return 100 + Math.floor(Math.random() * 100)
+  }
+
+
+
 
   return (
     <>
       <div style={{ textAlign: 'center' }}>
-        <h1>Welcome to portfolio-manager!</h1>
-        <img
-          width="450"
-          src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png"
-          alt="Nx - Smart, Fast and Extensible Build System"
-        />
+        <h1>Welcome to Portfolio Manager!</h1>
       </div>
-      <div>{m.message}</div>
+      {positions && <PositionList positions={positions} getCurrentPrice={getCurrentPrice} />}
     </>
   );
 };
