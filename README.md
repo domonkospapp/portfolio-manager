@@ -15,6 +15,9 @@ Prototypes are scattered to separated repositories
 - Extract order information from invoice
 - Manually create / sell / trim order
 - Provide overall portfolio info
+- For tax optimization store the transactions a structure like this:
+<img width="135" alt="Screenshot 2022-02-20 at 11 51 35" src="https://user-images.githubusercontent.com/51707177/154839208-91f9c5a6-0d67-4484-aec8-eb9119b197f0.png">
+
 ### Company valuatior
 - Collect stock infos from APIs
 - Create & Store valuations
